@@ -1,51 +1,38 @@
-# Remotion video
+# F1 2022 Opening Auto Generator
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <img src="https://github.com/remotion-dev/logo/raw/main/withtitle/element-0.png">
-  </a>
-</p>
+Update a config file and render the F1 2022 Opening video with the drivers in a different order
 
-Welcome to your Remotion project!
+## Instructions
 
-## Commands
+Change the order in `src/config/driverStandings.ts`
 
-**Install Dependencies**
+Render video using `npm run build`
 
-```console
-yarn
+### Example
+Would replace all the drivers with Latifi
+```ts
+const driverStrandings: {
+	[key: number]: Drivers;
+} = {
+	1: Drivers.Latifi,
+	2: Drivers.Latifi,
+	3: Drivers.Latifi,
+	4: Drivers.Latifi,
+	5: Drivers.Latifi,
+	6: Drivers.Latifi,
+	7: Drivers.Latifi,
+	8: Drivers.Latifi,
+	9: Drivers.Latifi,
+	10: Drivers.Latifi,
+	11: Drivers.Latifi,
+	12: Drivers.Latifi,
+	13: Drivers.Latifi,
+	14: Drivers.Latifi,
+	15: Drivers.Latifi,
+	16: Drivers.Latifi,
+	17: Drivers.Latifi,
+	18: Drivers.Latifi,
+	19: Drivers.Latifi,
+	20: Drivers.Latifi,
+};
 ```
-
-**Start Preview**
-
-```console
-yarn start
-```
-
-**Render video**
-
-```console
-yarn build
-```
-
-**Upgrade Remotion**
-
-```console
-yarn run upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help [on our Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Notice that for some entities a company license is needed. Read [the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
