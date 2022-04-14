@@ -4,7 +4,7 @@
   "description": "My Remotion video",
   "scripts": {
     "start": "remotion preview src/index.tsx",
-    "build": "remotion render src/index.tsx Empty out/video.mp4",
+    "build": "remotion render src/index.tsx F1-2022-Opening out/video.mp4",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },
@@ -23,6 +23,7 @@
     "typescript": "4.4.2"
   },
   "devDependencies": {
+    "@types/d3": "^7.1.0",
     "@types/react": "^17.0.0",
     "@types/web": "^0.0.46"
   }

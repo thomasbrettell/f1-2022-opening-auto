@@ -1,16 +1,17 @@
 import {Composition} from 'remotion';
 import {MyComposition} from './Composition';
+import videoConfig from './config/videoConfig';
 
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="Empty"
+				id="F1-2022-Opening"
 				component={MyComposition}
-				durationInFrames={60}
-				fps={30}
-				width={1280}
-				height={720}
+				durationInFrames={Math.floor(videoConfig.endTime * videoConfig.fps)}
+				fps={videoConfig.fps}
+				width={videoConfig.width}
+				height={videoConfig.height}
 			/>
 		</>
 	);
